@@ -27,8 +27,8 @@ exports.up = (pgm) => {
     },
     id_parent: {
       type: 'VARCHAR(30)',
-      references: 'menu(menu_id)', // self-referencing foreign key
-      onDelete: 'cascade',
+      // references: 'menu(menu_id)', // self-referencing foreign key
+      // onDelete: 'cascade',
     },
   });
 };

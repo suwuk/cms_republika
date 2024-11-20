@@ -9,7 +9,7 @@ class MenuService {
   }
 
   async addMenu({
-    name, url, status, id_parent = null,
+    name, url, status, id_parent = 0,
   }) {
     const menu_id = `menu-${nanoid(16)}`;
 

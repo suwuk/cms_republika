@@ -5,9 +5,7 @@ const CategoryPayloadSchema = Joi.object({
     'string.empty': 'Nama kategori tidak boleh kosong',
     'any.required': 'Nama kategori harus diisi',
   }),
-  id_parent: Joi.string().allow(null, '').messages({
-    'string.base': 'ID parent harus berupa string',
-  }),
+  id_parent: Joi.number().integer(),
   // slug: Joi.string().allow(null, '').messages({
   //   'string.base': 'Slug harus berupa string',
   // }),

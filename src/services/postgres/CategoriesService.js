@@ -8,7 +8,7 @@ class CategoriesService {
     this._pool = new Pool();
   }
 
-  async addCategory({ name, id_parent = null }) {
+  async addCategory({ name, id_parent = 0 }) {
     const slug = slugify(name, { lower: true, strict: true });
 
     const query = {

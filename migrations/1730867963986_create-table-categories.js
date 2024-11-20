@@ -23,8 +23,8 @@ exports.up = (pgm) => {
     },
     id_parent: {
       type: 'INTEGER',
-      references: 'categories(category_id)', // self-referencing foreign key
-      onDelete: 'cascade',
+      // references: 'categories(category_id)', // self-referencing foreign key
+      // onDelete: 'cascade',
     },
   });
 };
